@@ -1,0 +1,106 @@
+.center {
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5em;
+}
+
+.counter {
+    display: inline-flex;
+    border: 1px solid;
+    border-radius: 18px;
+}
+
+.counter div button {
+    border: none;
+    padding: 10px;
+    background: none;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px auto;
+    width: 50%;
+}
+
+.grid-item {
+    flex: 50%;
+    background-color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.reset {
+    padding: 15px;
+    border-top: 1px solid rgb(0 0 0 / 20%);
+    cursor: pointer;
+    user-select: none;
+}
+
+.count {
+    padding: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.text {
+    flex: 50%;
+    background: #990001;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    border-right: 1px solid rgb(0 0 0 / 20%);
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5em;
+}
+
+.reset:hover {
+    background-color: #990001;
+    color: white;
+    border-radius: 0px 0px 0px 15px;
+}
+
+.count:hover {
+    background-color: #990001;
+    color: white;
+    border-radius: 15px 0px 0px;
+}
+
+@media only screen 
+  and (max-device-width: 480px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 100px auto;
+        width: 300px;
+    }
+
+    .text {
+        flex: 50%;
+        border-radius: 15px 15px 0px 0px;
+        padding: 15px;
+    }
+
+    .grid-item {
+        flex: 50%;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .count:hover {
+        background-color: #990001;
+        border-radius: 0px;
+    }
+
+    .reset:hover {
+        background-color: #990001;
+        border-radius: 0px 0px 15px 15px;
+    }
+}
